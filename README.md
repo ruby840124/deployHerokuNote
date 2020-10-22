@@ -102,11 +102,14 @@ react app也可以掛在github page，<br>
 https://devcenter.heroku.com/articles/heroku-cli<br>
 一樣打開cmd<br>
 登入heroku帳號<br>
-<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/10.png" width="30%" height="40%"><br><br>
+在cmd打<br>
+```js     
+heroku login
+```
 跳出登入畫面，按一下login即可登入<br>
-<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/11.png" width="30%" height="40%"><br><br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/10.png" width="30%" height="40%"><br><br>
 成功登入畫面<br>
-<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/12.png" width="30%" height="40%"><br><br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/11.png" width="30%" height="40%"><br><br>
 接下來Create a new Git repository<br>
 Initialize a git repository in a new or existing directory<br>
 先進入到剛剛創建的react app資料夾<br>
@@ -115,7 +118,7 @@ $ cd my-project/
 $ git init
 $ heroku git:remote -a websocketreact
 ```
-<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/13.png" width="60%" height="60%"><br><br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/12.png" width="60%" height="60%"><br><br>
 接下來可以部署至heroku<br>
 ```js     
 $ git add .
@@ -123,4 +126,22 @@ $ git commit -m "make it better"
 $ git push heroku master
 ```
 Push上去heroku上<br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/13.png" width="60%" height="60%"><br><br>
+成功push畫面<br>
 <img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/14.png" width="60%" height="60%"><br><br>
+若出現以下錯誤<br>
+**Two different lockfiles found: package-lock.json and yarn.lock**
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/15.png" width="60%" height="60%"><br><br>
+請輸入以下指令<br>
+```js     
+If you use npm:
+git rm yarn.lock
+git commit -m "Remove yarn lock file"
+git push heroku master
+If you use yarn:
+git rm package-lock.json
+git commit -m "Remove npm lock file"
+```
+git push heroku master<br>
+接下來輸入heroku open，就可以看到成功上傳至heroku上了<br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/16.png" width="60%" height="60%"><br><br>

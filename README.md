@@ -1,19 +1,19 @@
 # deployHerokuNote
 之前有將React app部署到heroku，<br>
 故整理一下筆記~ <br>
-總共有兩個步驟:<br>
+總共有三個步驟:<br>
 **第一步驟是創建一個react app** <br>
-**第二步驟是將創建的app部署至heroku** <br>
+**第二步驟是創建一個heroku應用程式** <br>
+**第三步驟是將創建的app部署至heroku** <br>
 
-## 創建一個react app <br>
+## 1.創建一個react app <br>
 `為什麼要使用react app?`<br>
 React app為臉書開發的快速建置專案環境的工具。<br>
 在自己建置react專案時，<br>
 需要babel轉譯語法，<br>
 且還需要用webpack打包程式碼，<br>
-有了react app可以輸入幾行指令立刻幫你打包這些react所需的環境。<br>
+有了react app可以輸入幾行指令立刻幫你打包這些react所需的環境。<br><br>
 
-**1.創建一個react app專案** <br>
 在cmd打以下指令: <br>
 ```js     
 npx create-react-app my-app //創建名叫my-app的react app專案
@@ -96,3 +96,31 @@ react app也可以掛在github page，<br>
 <img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/8.png" width="60%" height="60%"><br><br>
 成功創建應用程式的畫面<br>
 <img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/9.png" width="60%" height="60%"><br><br>
+
+## 3.將創建的app部署至heroku <br>
+請先安裝Install the Heroku CLI，其為管理、創建、提交等命令的工具。<br>
+https://devcenter.heroku.com/articles/heroku-cli<br>
+一樣打開cmd<br>
+登入heroku帳號<br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/10.png" width="30%" height="40%"><br><br>
+跳出登入畫面，按一下login即可登入<br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/11.png" width="30%" height="40%"><br><br>
+成功登入畫面<br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/12.png" width="30%" height="40%"><br><br>
+接下來Create a new Git repository<br>
+Initialize a git repository in a new or existing directory<br>
+先進入到剛剛創建的react app資料夾<br>
+```js     
+$ cd my-project/
+$ git init
+$ heroku git:remote -a websocketreact
+```
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/13.png" width="60%" height="60%"><br><br>
+接下來可以部署至heroku<br>
+```js     
+$ git add .
+$ git commit -m "make it better"
+$ git push heroku master
+```
+Push上去heroku上<br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/14.png" width="60%" height="60%"><br><br>

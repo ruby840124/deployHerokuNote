@@ -73,7 +73,26 @@ Source maps允許你的原始碼在生產環境上，<br>
 這使得debug上更加方便。<br>
 然而這意味著任何人都可以看到妳的原始碼，所以新增這個檔案是避免有心人士看到程式碼。<br>
 最後新增完資料夾的內容，可以看到多了server.js、.env，更改package.json檔案。<br>
-<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/5.png" width="60%" height="60%"><br><br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/5.png" width="30%" height="40%"><br><br>
 
+## 2.創建一個heroku應用程式 <br>
+`為什麼要使用heroku?`<br>
+Heroku為支援多種程式語言的雲端平台，<br>
+一開始只限於支援Ruby，<br>
+後來增加多種語言像是Java、Node.js、Scala、Clojure、Python以及PHP和Perl的支援。<br>
+react app也可以掛在github page，<br>
+然而github page只能掛載靜態網頁，<br>
+若是想要結合後端運用的動態網頁，<br>
+可能就得選用heroku，<br>
+不過heroku一個月僅提供450小時，<br>
+且30分鐘沒使用主機會進入休眠。<br><br>
 
-
+先創建一個heroku帳號，有了帳號新增一個應用程式<br>
+按下new<br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/6.png" width="60%" height="60%"><br><br>
+選擇create new app<br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/7.png" width="60%" height="60%"><br><br>
+輸入你想要的應用程式名稱<br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/8.png" width="60%" height="60%"><br><br>
+成功創建應用程式的畫面<br>
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/9.png" width="60%" height="60%"><br><br>

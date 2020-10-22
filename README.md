@@ -20,10 +20,9 @@ npx create-react-app my-app //創建名叫my-app的react app專案
 cd my-app //進入至my-app資料夾
 npm start //run 專案
 ```
-以下圖片為:<br>
 下指令npx create-react-app my-app成功專案畫面<br>
 (my-app可以換成你想要的專案名稱)<br>
-<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/1.png" width="60%" height="60%">
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/1.png" width="60%" height="60%"><br>
 下指令npm start，跑起第一個react專案<br>
-<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/2.png" width="60%" height="60%">
+<img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/2.png" width="60%" height="60%"><br>
 

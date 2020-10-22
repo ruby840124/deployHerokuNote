@@ -1,9 +1,9 @@
 # deployHerokuNote
 之前有將React app部署到heroku，<br>
 故整理一下筆記~ <br>
-總共有兩個步驟，<br>
-`第一步驟是創建一個react app` <br>
-`第二步驟是將創建的app部署至heroku` <br><br>
+總共有兩個步驟:<br>
+**第一步驟是創建一個react app** <br>
+**第二步驟是將創建的app部署至heroku** <br>
 
 ## 創建一個react app <br>
 `為什麼要使用react app?`<br>

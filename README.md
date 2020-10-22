@@ -145,3 +145,9 @@ git commit -m "Remove npm lock file"
 git push heroku master<br>
 接下來輸入heroku open，就可以看到成功上傳至heroku上了<br>
 <img src="https://github.com/ruby840124/deployHerokuNote/blob/main/herokuImg/16.png" width="60%" height="60%"><br><br>
+
+## 參考網站 <br>
+先前有部署至heroku的專案:
+
+https://medium.com/jeremy-gottfrieds-tech-blog/tutorial-how-to-deploy-a-production-react-app-to-heroku-c4831dfcfa08<br>
+https://github.com/facebook/create-react-app<br>
